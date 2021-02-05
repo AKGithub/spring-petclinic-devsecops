@@ -15,7 +15,7 @@ node {
     }    
     stage('Application_Code_Analysis') {        
         withSonarQubeEnv {
-            sh 'mvn sonar:sonar -Dsonar.login=fd38c4bb5fd8fecff09ad067a13ca2f10f079c8c -Dsonar.projectKey=petclinickey -Dsonar.projectName=SimpleJavaProject -Dsonar.organization=petclinicorg'
+            sh 'mvn sonar:sonar -Dsonar.login=523b515e67024a7bab26d491d873a27678180ab7 -Dsonar.projectKey=petclinicprojkey -Dsonar.projectName=petclinic -Dsonar.organization=petclinicorganization'
         }
     }
    
